@@ -28,7 +28,7 @@ fn main(){
 
 Okay, hear me out. Say you've got data like this:
 ```text
-1-3:B,I,U//43-60:I//83-87:I,U//99-104: B,I// etc.
+1-3:B,I,U//43-60:I//83-87:I,U//99-104: B,I// [etc.]
 ```
 Let's say this data represents text markup: You've got character ranges on the left of the colon `:`, and highlighting information on the right side (`B` = bold, `I` = italics, `U` = underline, but you'll probably expand it later once you get that hedgefund money), of which there might be multiple, separated by commas `,`. Each markup is separated by double slashes `//`.
 
