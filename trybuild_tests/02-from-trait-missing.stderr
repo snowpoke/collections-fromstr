@@ -1,0 +1,8 @@
+error[E0277]: the trait bound `NewVec: From<Vec<i32>>` is not satisfied
+ --> $DIR/02-from-trait-missing.rs:3:10
+  |
+3 | #[derive(FromStr)]
+  |          ^^^^^^^ the trait `From<Vec<i32>>` is not implemented for `NewVec`
+  |
+  = note: required by `from`
+  = note: this error originates in a derive macro (in Nightly builds, run with -Z macro-backtrace for more info)

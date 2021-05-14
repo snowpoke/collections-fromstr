@@ -1,0 +1,29 @@
+[package]
+authors = ["snowpoke <hello@snowpoke.ink>"]
+categories = ["data-structures", "rust-patterns", "parsing"]
+description = "Derives FromStr for collection types like Vec<T> or HashSet<T>."
+edition = "2018"
+keywords = ["derive", "vec", "fromstr", "iterator", "vector"]
+license = "MIT OR Apache-2.0"
+name = "collections-fromstr"
+readme = "README.md"
+repository = "https://github.com/snowpoke/collections-fromstr"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+if_chain = "1.0.1"
+proc-macro2 = "1.0.26"
+quote = "1.0.9"
+syn = "1.0.72"
+
+[dev-dependencies]
+assert2 = "0.3.5"
+derive_more = "0.99.13"
+maplit = "1.0.2"
+parse-display = "0.4.1"
+trybuild = "1.0.42"

@@ -1,0 +1,5 @@
+error: The separator must not be empty.
+ --> $DIR/09-empty-separator.rs:5:20
+  |
+5 | #[item_separator = ""]
+  |                    ^^

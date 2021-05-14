@@ -1,0 +1,9 @@
+error[E0277]: a value of type `HashMap<i32, String>` cannot be built from an iterator over elements of type `i32`
+ --> $DIR/07-hashmap.rs:5:16
+  |
+5 | #[derive(From, FromStr)]
+  |                ^^^^^^^ value of type `HashMap<i32, String>` cannot be built from `std::iter::Iterator<Item=i32>`
+  |
+  = help: the trait `FromIterator<i32>` is not implemented for `HashMap<i32, String>`
+  = note: required because of the requirements on the impl of `FromIterator<Result<i32, ParseIntError>>` for `Result<HashMap<i32, String>, ParseIntError>`
+  = note: this error originates in a derive macro (in Nightly builds, run with -Z macro-backtrace for more info)

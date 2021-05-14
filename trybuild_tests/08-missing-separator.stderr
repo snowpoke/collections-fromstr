@@ -1,0 +1,7 @@
+error: proc-macro derive panicked
+ --> $DIR/08-missing-separator.rs:4:16
+  |
+4 | #[derive(From, FromStr)]
+  |                ^^^^^^^
+  |
+  = help: message: Missing `item_separator` attribute.
